@@ -66,7 +66,9 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: rgb(203, 189, 176);
+  --bs-body-bg: #cbbdb0;
+  --bs-project-bg: 134, 120, 107;
+  --bs-navbar-bg: #12100c;
 }
 
 *,
@@ -11475,7 +11477,7 @@ body {
 
 #mainNav {
   min-height: 3.5rem;
-  background-color: #181818; 
+  background-color:  var(--bs-navbar-bg); 
 }
 #mainNav .navbar-toggler {
   font-size: 90%;
@@ -11524,7 +11526,7 @@ body {
     color: #fff;
   }
   #mainNav.navbar-shrink {
-    background-color: #181818;
+    background-color: var(--bs-navbar-bg);
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #000;
@@ -11706,3 +11708,59 @@ body {
   margin-top: -50px;
   margin-bottom: 20px;
 }
+
+.bg-project {
+  background-color: var(--bs-project-bg);
+}
+
+.bg-project-25 {
+  background-color: rgba(var(--bs-project-bg), 0.25);
+  color: #000;
+}
+
+.bg-project-50 {
+  background-color: rgba(var(--bs-project-bg), 0.5);
+  color: #000;
+}
+
+.bg-project-75 {
+  background-color: rgba(var(--bs-project-bg), 0.75);
+  color: #fff;
+}
+
+/* .img-project-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.img-project-wrapper::after {
+  content: "";
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0), rgba(0,0,0,0));
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.img-project-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.txt-project-wrapper {
+  position: relative;
+}
+
+.txt-project-wrapper::after {
+  content: "";
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.5));
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
